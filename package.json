@@ -1,0 +1,1 @@
+{"name":"diccionario-medicina-carlota","version":"1.0.0","private":true,"description":"Diccionario médico de estudio con fichas, búsqueda, índice alfabético y frecuencia orientativa","scripts":{"build":"python3 build.py"}}
