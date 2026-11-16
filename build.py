@@ -13,4 +13,7 @@ assert '__DICTIONARY_DATA__' not in html
 (root / 'dist').mkdir(exist_ok=True)
 (root / 'dist' / 'index.html').write_text(html)
 (root / 'dist' / '.nojekyll').write_text('')
+# GitHub Pages serves the repository root; keep it in sync with the preview.
+(root / 'index.html').write_text(html)
+(root / '.nojekyll').write_text('')
 print(f"Built {len(data['families'])+len(data['terms'])} cards into dist/index.html ({len(html.encode())} bytes)")

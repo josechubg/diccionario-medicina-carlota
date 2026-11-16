@@ -1,5 +1,7 @@
 # Diccionario Medicina · Carlota🥰
 
+Web pública: https://josechubg.github.io/diccionario-medicina-carlota/
+
 Diccionario de estudio en español, como web estática independiente. No necesita cuentas, backend, conexión a ChatGPT, claves de API ni dependencias externas. El contenido, la interfaz y el buscador están integrados en `dist/index.html`.
 
 ## Contenido
@@ -22,11 +24,13 @@ Para reconstruir después de editar contenido o diseño:
 python3 build.py
 ```
 
-Los datos están en `data.json`; el diseño, en `styles.css`; y la estructura y comportamiento, en `template.html`. La fuente es el Diccionario médico de bolsillo A6, edición de noviembre de 2026. Las páginas originales se conservan en cada ficha.
+Los datos están en `data.json`; el diseño, en `styles.css`; y la estructura y comportamiento, en `template.html`. El constructor actualiza tanto `dist/index.html` para la previsualización como `index.html` en la raíz para la publicación. La fuente es el Diccionario médico de bolsillo A6, edición de noviembre de 2026. Las páginas originales se conservan en cada ficha.
+
+La interfaz usa un estilo de cuaderno ilustrado, un cerebro decorativo animado, tarjetas por colores y texto ampliado. El botón de pausa detiene las animaciones y recuerda la preferencia en este navegador. Se respeta también la preferencia de movimiento reducido del dispositivo. La ilustración es decorativa y no pretende representar la anatomía real.
 
 ## Publicación en GitHub Pages
 
-Crear un repositorio público, subir `dist/index.html` y `dist/.nojekyll` a su raíz y seleccionar `main` y `/ (root)` en Settings → Pages. Alternativamente, publicar la carpeta `dist/` con un flujo de despliegue estático.
+El repositorio público `josechubg/diccionario-medicina-carlota` publica automáticamente desde `main` y `/ (root)` en GitHub Pages. Después de ejecutar `python3 build.py`, incluir `index.html` y los archivos fuente modificados en el commit. Para otros alojamientos estáticos se puede publicar el contenido de `dist/`, excluyendo los archivos temporales de revisión `qa-*.html`.
 
 ## Verificación realizada
 
