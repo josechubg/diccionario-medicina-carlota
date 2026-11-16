@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#7844ed">
-<meta name="description" content="Diccionario Medicina · Carlota🥰. Aprende y consulta palabras médicas, raíces, prefijos y sufijos en fichas. Busca por término, por orden alfabético o por frecuencia orientativa de uso.">
+<meta name="description" content="Diccionario Medicina · Carlota🥰. Estudia prefijos, sufijos y raíces con sus significados y ejemplos. Consulta las palabras completas en un buscador independiente.">
 <title>Diccionario Medicina · Carlota🥰</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d6f67d'/%3E%3Cpath d='M17 19h12l3 4 3-4h12v29H35l-3 3-3-3H17z' fill='none' stroke='%23302343' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M32 24v23' stroke='%23302343' stroke-width='3'/%3E%3C/svg%3E">
 <style>__STYLES__</style>
@@ -48,25 +48,32 @@
      </g>
     </svg>
     <div class="hero-note">
-     <div class="note-top"><span>PALABRA DESMONTADA</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M8 19h11V8"/></svg></div>
-     <div class="formula"><span>cito<small>célula</small></span><i>+</i><span>lisis<small>destrucción</small></span></div>
-     <button class="note-link" id="example-term"><span>Citólisis <small>¡Ya tiene sentido!</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button>
+     <div class="note-top"><span>UNA PIEZA, MUCHAS PALABRAS</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M8 19h11V8"/></svg></div>
+     <div class="formula"><span>-filo<small>afinidad</small></span></div>
+     <button class="note-link" id="example-term"><span>Ver ejemplos<small>Acidófilo · Basófilo</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></button>
     </div>
     <span class="art-label" aria-hidden="true">conecta esas neuronas <svg viewBox="0 0 24 24"><path d="m5 19 14-14M8 5h11v11"/></svg></span>
    </aside>
   </section>
   <section class="explorer" id="explorer" aria-label="Explorar el diccionario">
-   <div class="explore-topline"><strong>¿Qué descubrimos hoy?</strong><span>Tres caminos. Muchos «¡ajá!»</span></div>
-   <nav class="tabs" role="tablist" aria-label="Formas de consultar"><button class="tab" id="tab-search" role="tab" aria-selected="true" aria-controls="browse-panel" data-mode="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg>Buscar</button><button class="tab" id="tab-alpha" role="tab" aria-selected="false" aria-controls="browse-panel" data-mode="alpha" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 18 5-12 5 12M5 14h6M17 6h4l-4 12h4"/></svg>Orden A–Z</button><button class="tab" id="tab-frequency" role="tab" aria-selected="false" aria-controls="browse-panel" data-mode="frequency" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20v-6M12 20V9M19 20V4"/></svg>Frecuencia</button><span class="entry-label">TRES CAMINOS, UN MISMO DICCIONARIO</span></nav>
+   <div class="explore-topline"><strong>¿Qué descubrimos hoy?</strong><span>Empieza por una pieza o por una palabra</span></div>
+   <div class="scope-tabs" role="tablist" aria-label="Qué quieres consultar">
+    <button class="scope-tab" id="scope-family" role="tab" aria-selected="true" aria-controls="scope-panel" data-scope="family"><span class="scope-icon" aria-hidden="true">a-</span><span><strong>Prefijos, sufijos y raíces</strong><small>Su significado y todos sus ejemplos</small></span></button>
+    <button class="scope-tab" id="scope-term" role="tab" aria-selected="false" aria-controls="scope-panel" data-scope="term" tabindex="-1"><span class="scope-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg></span><span><strong>Buscar una palabra</strong><small>Anemia, acidófilo, glucemia…</small></span></button>
+   </div>
+   <div id="scope-panel" role="tabpanel" aria-labelledby="scope-family">
+   <p class="scope-description" id="scope-description">El diccionario de prefijos, sufijos y raíces: elige una ficha para ver su significado y sus ejemplos.</p>
+   <nav class="tabs" id="family-modes" role="tablist" aria-label="Cómo consultar los prefijos, sufijos y raíces"><button class="tab" id="tab-search" role="tab" aria-selected="true" aria-controls="browse-panel" data-mode="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg>Buscar</button><button class="tab" id="tab-alpha" role="tab" aria-selected="false" aria-controls="browse-panel" data-mode="alpha" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 18 5-12 5 12M5 14h6M17 6h4l-4 12h4"/></svg>Orden A–Z</button><button class="tab" id="tab-frequency" role="tab" aria-selected="false" aria-controls="browse-panel" data-mode="frequency" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20v-6M12 20V9M19 20V4"/></svg>Frecuencia</button><span class="entry-label">TRES CAMINOS, UN MISMO DICCIONARIO</span></nav>
    <div id="browse-panel" role="tabpanel" aria-labelledby="tab-search">
-    <div class="search-box" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="search" type="search" aria-label="Buscar términos, raíces o significados" placeholder="Esa palabra que se te resiste…" autocomplete="off" spellcheck="false"><span class="key-hint" aria-hidden="true">/</span><button type="button" id="clear-search" class="clear-search" aria-label="Borrar búsqueda" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
-    <div class="suggestions" id="suggestions"><span>Por ejemplo:</span><button data-search="glucemia">glucemia</button><span>·</span><button data-search="osteo-">osteo-</button><span>·</span><button data-search="célula">célula</button></div>
+    <div class="search-box" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="search" type="search" aria-label="Buscar un prefijo, sufijo, raíz o significado" placeholder="Busca a-, -filo, afinidad…" enterkeyhint="search" autocomplete="off" spellcheck="false"><span class="key-hint" aria-hidden="true">/</span><button type="button" id="clear-search" class="clear-search" aria-label="Borrar búsqueda" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+    <div class="suggestions" id="suggestions"></div>
     <div id="alphabet-panel" hidden><div class="alphabet" id="alphabet" aria-label="Filtrar por letra inicial"></div><p class="alphabet-help">Selecciona una letra. También puedes escribir para afinar la búsqueda.</p></div>
     <div class="frequency-intro" id="frequency-panel" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20v-6M12 20V9M19 20V4"/></svg><p><strong>De las más habituales a las más específicas</strong>Frecuencia orientativa para el estudio, basada en una clasificación editorial. No representa recuentos reales ni estadísticas de uso. Dentro de cada grupo, las fichas se ordenan de la A a la Z.</p></div>
-    <div class="filter-row"><div class="types" role="group" aria-label="Tipo de ficha"><button class="chip" aria-pressed="true" data-type="all">Todas</button><button class="chip" aria-pressed="false" data-type="term">Palabras</button><button class="chip" aria-pressed="false" data-type="family">Raíces y afijos</button></div><div class="result-count" id="result-count" role="status" aria-live="polite"></div></div>
+    <div class="filter-row"><p class="collection-label" id="collection-label">Prefijos, sufijos y raíces</p><div class="result-count" id="result-count" role="status" aria-live="polite"></div></div>
     <div class="results-heading"><h2 id="results-title">Explora el diccionario</h2><p id="results-subtitle">Una palabra lleva a otra</p></div>
     <div class="cards" id="cards"></div>
     <div class="pagination" id="pagination"><button id="prev-page" aria-label="Página anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>Anterior</button><span id="page-info"></span><button id="next-page" aria-label="Página siguiente">Siguiente<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div>
+   </div>
    </div>
   </section>
   <noscript><p class="noscript">Activa JavaScript para buscar y abrir las fichas del diccionario. Todo el contenido funciona en tu navegador y no necesita una cuenta.</p></noscript>
@@ -93,16 +100,30 @@ const collator=new Intl.Collator('es',{sensitivity:'base',ignorePunctuation:true
 const sortLabel=e=>state.mode==='alpha'&&state.letter!=='Todas'?(e.label.split('/').find(s=>normalize(s).charAt(0).toUpperCase()===state.letter)||e.label):e.label;
 const titleCompare=(a,b)=>collator.compare(sortLabel(a),sortLabel(b));
 let saved=new Set();try{saved=new Set(JSON.parse(localStorage.getItem('carlota-dictionary-saved-v1')||'[]').filter(k=>byKey.has(k)))}catch{}
-let state={mode:'search',query:'',type:'all',letter:'Todas',page:1,saved:false};
+let state={scope:'family',mode:'alpha',query:'',letter:'Todas',page:1,saved:false};
 let activeKey=null,opener=null,allResults=[],timer;
 const pageSize=18;
-for(const e of items){e.frequency=[1,2,3].includes(e.frequency)?e.frequency:2;e.searchName=normalize(e.label);e.searchText=normalize([e.label,e.definition,e.meaning,e.mnemonic,e.category,...(e.familyIds||[]).map(id=>families.get(id)?.label||''),...(e.exampleIds||[]).map(id=>terms.get(id)?.label||'')].join(' '))}
+for(const e of items){
+ e.frequency=[1,2,3].includes(e.frequency)?e.frequency:2;
+ e.searchName=normalize(e.label);
+ e.searchText=normalize(e.type==='family'?[e.label,e.meaning,e.mnemonic].join(' '):[e.label,e.definition,...(e.definitions||[]).map(d=>typeof d==='string'?d:d.text||'')].join(' '));
+}
+
 function toggleSaved(k){if(saved.has(k))saved.delete(k);else saved.add(k);let persisted=true;try{localStorage.setItem('carlota-dictionary-saved-v1',JSON.stringify([...saved]))}catch{persisted=false}updateSaved();render();if(activeKey===k)renderDetail(k);toast(persisted?(saved.has(k)?'✦ ¡Al bolsillo! Ficha guardada en este navegador':'Ficha quitada de guardadas'):'Ficha marcada durante esta visita; el navegador no permite guardarla.');}
 function updateSaved(){$('saved-count').textContent=saved.size;$('saved-toggle').setAttribute('aria-pressed',String(state.saved))}
 function toast(message){clearTimeout(timer);$('toast').textContent=message;$('toast').hidden=false;timer=setTimeout(()=>$('toast').hidden=true,3000)}
 function rank(e,q){if(e.searchName===q)return 0;if(e.searchName.split('/').map(s=>s.trim()).includes(q))return 1;if(e.searchName.startsWith(q))return 2;if(e.searchName.includes(q))return 3;return 4}
 function letterMatch(e,l){return l==='Todas'||e.label.split('/').some(x=>normalize(x).charAt(0).toUpperCase()===l)}
-function getResults(){const q=normalize(state.query);let found=items.filter(e=>(state.type==='all'||e.type===state.type)&&(!state.saved||saved.has(key(e)))&&(!q||q.split(/\s+/).every(w=>e.searchText.includes(w)))&&(state.mode!=='alpha'||letterMatch(e,state.letter)));found.sort((a,b)=>{if(state.mode==='frequency')return a.frequency-b.frequency||titleCompare(a,b);if(q&&state.mode==='search')return rank(a,q)-rank(b,q)||titleCompare(a,b);return titleCompare(a,b)});return found}
+function getResults(){
+ const q=normalize(state.query);
+ if(state.scope==='term'&&!q&&!state.saved)return [];
+ const source=items.filter(e=>e.type===state.scope&&(!state.saved||saved.has(key(e)))&&(state.scope!=='family'||state.mode!=='alpha'||letterMatch(e,state.letter)));
+ const matching=query=>source.filter(e=>!query||query.split(/\s+/).every(w=>e.searchText.includes(w)));
+ let found=matching(q),searchQuery=q;
+ if(!found.length&&state.scope==='term'&&q.length>4&&q.endsWith('s')){searchQuery=q.slice(0,-1);found=matching(searchQuery);}
+ found.sort((a,b)=>{if(state.scope==='family'&&state.mode==='frequency')return a.frequency-b.frequency||titleCompare(a,b);if(q&&(state.scope==='term'||state.mode==='search'))return rank(a,searchQuery)-rank(b,searchQuery)||titleCompare(a,b);return titleCompare(a,b)});
+ return found;
+}
 function bars(n){return '<span class="bars" aria-hidden="true">'+[1,2,3].map(i=>'<i'+(i>4-n?' class="off"':'')+'></i>').join('')+'</span>'}
 const categoryStyles={
  'Cantidad y función':{skin:'violet',path:'M4 8h16M4 16h16M8 5v6M16 13v6'},
@@ -114,31 +135,100 @@ const categoryStyles={
 };
 function cardStyle(e){return categoryStyles[e.category||(families.get((e.familyIds||[])[0])?.category)]||categoryStyles['Cantidad y función']}
 function categoryIcon(e){return '<span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="'+cardStyle(e).path+'"/></svg></span>'}
-function card(e){const k=key(e),familyNames=(e.familyIds||[]).map(id=>families.get(id)?.label).filter(Boolean);return '<article class="card skin-'+cardStyle(e).skin+' '+(e.type==='family'?'is-family':'')+'"><div class="card-top">'+categoryIcon(e)+esc(e.type==='family'?'Raíz / afijo':'Término médico')+'</div><button class="bookmark" data-save="'+esc(k)+'" aria-label="'+(saved.has(k)?'Quitar de guardadas: ':'Guardar: ')+esc(e.label)+'" aria-pressed="'+saved.has(k)+'">'+icons.bookmark+'</button><h3><button class="card-open" data-open="'+esc(k)+'">'+esc(e.label)+'</button></h3><p class="card-definition">'+esc(e.type==='family'?e.meaning:e.definition)+'</p><div class="card-bottom">'+(state.mode==='frequency'?'<span class="frequency-tag">'+bars(e.frequency)+esc(frequencyLabel[e.frequency])+'</span>':'<span class="family-labels">'+esc(e.type==='family'?(e.exampleIds||[]).length+' ejemplos para entenderla':familyNames.join(' · '))+'</span>')+icons.arrow+'</div></article>'}
-function render(){allResults=getResults();const pages=Math.max(1,Math.ceil(allResults.length/pageSize));state.page=Math.min(Math.max(1,state.page),pages);const from=(state.page-1)*pageSize,show=allResults.slice(from,from+pageSize);$('clear-search').hidden=!state.query;$('suggestions').hidden=state.mode!=='search'||!!state.query;$('alphabet-panel').hidden=state.mode!=='alpha';$('frequency-panel').hidden=state.mode!=='frequency';document.querySelectorAll('[data-mode]').forEach(b=>{const selected=b.dataset.mode===state.mode;b.setAttribute('aria-selected',String(selected));b.tabIndex=selected?0:-1});$('browse-panel').setAttribute('aria-labelledby','tab-'+state.mode);document.querySelectorAll('[data-type]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.type===state.type)));document.querySelectorAll('[data-letter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.letter===state.letter)));$('result-count').innerHTML='<strong>'+allResults.length+'</strong> '+(allResults.length===1?'ficha':'fichas')+(state.saved?' guardadas':'');$('results-title').textContent=state.saved?'Tus fichas guardadas':state.query?'Resultados para «'+state.query+'»':state.mode==='alpha'?(state.letter==='Todas'?'Diccionario de la A a la Z':'Letra '+state.letter):state.mode==='frequency'?'Por frecuencia de uso':'Tu dosis de palabras';$('results-subtitle').textContent=state.mode==='frequency'?'Clasificación orientativa':state.query?'Coincide con nombre o significado':state.mode==='alpha'?'Raíces y palabras, en orden':'Abre una ficha. Conecta una idea.';$('cards').innerHTML=show.length?show.map(card).join(''):'<div class="empty">'+icons.bookmark+'<h3>'+(state.saved?'Aquí estarán tus fichas':'No encontramos coincidencias')+'</h3><p>'+(state.saved?'Guarda las palabras que quieras repasar tocando el marcador de cada ficha.':'Prueba una palabra más corta, otra letra o el filtro «Todas». Puedes escribir sin tildes.')+'</p><button id="reset-filters">Ver todo el diccionario</button></div>';$('pagination').hidden=allResults.length<=pageSize;$('page-info').textContent=state.page+' / '+pages;$('prev-page').disabled=state.page===1;$('next-page').disabled=state.page===pages;updateSaved();}
-function changeMode(mode){state.mode=mode;state.page=1;state.letter='Todas';state.saved=false;render();saveHash();if(mode==='search')$('search').focus()}
-function saveHash(){const p=new URLSearchParams();if(state.mode!=='search')p.set('modo',state.mode);if(state.query)p.set('buscar',state.query);if(state.type!=='all')p.set('tipo',state.type);if(state.mode==='alpha'&&state.letter!=='Todas')p.set('letra',state.letter);if(state.saved)p.set('guardadas','1');if(activeKey)p.set('ficha',activeKey);const suffix=p.size?'#'+p.toString():location.pathname+location.search;try{history.replaceState(null,'',suffix)}catch{}}
-function readHash(){const p=new URLSearchParams(location.hash.slice(1));state.mode=['search','alpha','frequency'].includes(p.get('modo'))?p.get('modo'):'search';state.query=p.get('buscar')||'';state.type=['term','family'].includes(p.get('tipo'))?p.get('tipo'):'all';state.letter=p.get('letra')||'Todas';state.saved=p.get('guardadas')==='1';$('search').value=state.query;render();const k=p.get('ficha');if(k&&byKey.has(k))openDetail(k,false);else if($('detail').open)$('detail').close()}
+function card(e){
+ const k=key(e),familyNames=(e.familyIds||[]).map(id=>families.get(id)?.label).filter(Boolean);
+ const examples=(e.exampleIds||[]).slice(0,3).map(id=>terms.get(id)?.label).filter(Boolean);
+ return '<article class="card skin-'+cardStyle(e).skin+' '+(e.type==='family'?'is-family':'')+'"><div class="card-top">'+categoryIcon(e)+esc(e.type==='family'?'Raíz / afijo':'Palabra completa')+'</div><button class="bookmark" data-save="'+esc(k)+'" aria-label="'+(saved.has(k)?'Quitar de guardadas: ':'Guardar: ')+esc(e.label)+'" aria-pressed="'+saved.has(k)+'">'+icons.bookmark+'</button><h3><button class="card-open" data-open="'+esc(k)+'">'+esc(e.label)+'</button></h3><p class="card-definition">'+esc(e.type==='family'?e.meaning:e.definition)+'</p>'+(examples.length?'<p class="card-examples"><strong>Ejemplos</strong> '+esc(examples.join(' · '))+'</p>':'')+'<div class="card-bottom">'+(state.scope==='family'&&state.mode==='frequency'?'<span class="frequency-tag">'+bars(e.frequency)+esc(frequencyLabel[e.frequency])+'</span>':'<span class="family-labels">'+esc(e.type==='family'?'Ver sus '+(e.exampleIds||[]).length+' ejemplos':familyNames.join(' · '))+'</span>')+icons.arrow+'</div></article>';
+}
+function render(){
+ const isFamily=state.scope==='family',waiting=!isFamily&&!state.query&&!state.saved;
+ allResults=getResults();const pages=Math.max(1,Math.ceil(allResults.length/pageSize));
+ state.page=Math.min(Math.max(1,state.page),pages);
+ const from=(state.page-1)*pageSize,show=allResults.slice(from,from+pageSize);
+ $('clear-search').hidden=!state.query;
+ document.querySelectorAll('[data-scope]').forEach(b=>{const selected=b.dataset.scope===state.scope;b.setAttribute('aria-selected',String(selected));b.tabIndex=selected?0:-1});
+ $('scope-panel').setAttribute('aria-labelledby','scope-'+state.scope);
+ $('scope-description').textContent=isFamily?'El diccionario de prefijos, sufijos y raíces: abre una ficha para ver su significado y todos sus ejemplos.':'Escribe una palabra completa para conocer su definición y los prefijos, sufijos o raíces con los que se relaciona.';
+ $('family-modes').hidden=!isFamily;
+ $('search').placeholder=isFamily?'Busca a-, -filo, afinidad…':'Escribe una palabra: anemia, acidófilo…';
+ $('search').setAttribute('aria-label',isFamily?'Buscar un prefijo, sufijo, raíz o significado':'Buscar una palabra completa');
+ $('suggestions').hidden=!!state.query;
+ $('suggestions').innerHTML='<span>Por ejemplo:</span>'+(isFamily?['a-','-filo','osteo-']:['anemia','acidófilo','glucemia']).map(q=>'<button data-search="'+esc(q)+'">'+esc(q)+'</button>').join('');
+ $('alphabet-panel').hidden=!isFamily||state.mode!=='alpha';
+ $('frequency-panel').hidden=!isFamily||state.mode!=='frequency';
+ document.querySelectorAll('[data-mode]').forEach(b=>{const selected=b.dataset.mode===state.mode;b.setAttribute('aria-selected',String(selected));b.tabIndex=selected?0:-1});
+ $('browse-panel').setAttribute('aria-labelledby',isFamily?'tab-'+state.mode:'scope-term');
+ document.querySelectorAll('[data-letter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.letter===state.letter)));
+ $('collection-label').textContent=isFamily?'Prefijos, sufijos y raíces':'Palabras completas';
+ $('result-count').innerHTML='<strong>'+(waiting?DATA.terms.length:allResults.length)+'</strong> '+(waiting?'palabras para consultar':(allResults.length===1?'ficha':'fichas'))+(state.saved?' guardadas':'');
+ $('results-title').textContent=state.saved?(isFamily?'Tus raíces y afijos guardados':'Tus palabras guardadas'):state.query?'Resultados para «'+state.query+'»':!isFamily?'¿Qué palabra quieres entender?':state.mode==='alpha'?(state.letter==='Todas'?'De la A a la Z':'Letra '+state.letter):state.mode==='frequency'?'Por frecuencia de uso':'Explora las piezas de la medicina';
+ $('results-subtitle').textContent=isFamily?(state.mode==='frequency'?'Clasificación orientativa':'Significado + ejemplos de cada pieza'):(state.query?'Definición y componentes relacionados':'Busca el término completo');
+ let empty;
+ if(waiting)empty='<div class="empty word-search-empty"><span class="word-search-symbol" aria-hidden="true">Aa</span><h3>La palabra entera va aquí</h3><p>Por ejemplo, busca <button class="inline-example" data-search="anemia">anemia</button> para abrir su explicación. Sus componentes te llevarán a las fichas del diccionario.</p></div>';
+ else if(state.saved)empty='<div class="empty">'+icons.bookmark+'<h3>Aún no hay fichas guardadas en este apartado</h3><p>Usa el marcador de cada ficha para reunir las que quieras repasar.</p><button id="reset-filters">Ver este apartado</button></div>';
+ else empty='<div class="empty"><h3>No encontramos coincidencias</h3><p>'+(isFamily?'Prueba un prefijo, sufijo, raíz o significado. Si tienes una palabra completa, puedes consultarla en el otro buscador.':'Prueba una palabra más corta o escribe sin tildes.')+'</p>'+(isFamily&&state.query?'<button id="search-as-word">Buscar «'+esc(state.query)+'» como palabra</button>':'<button id="reset-filters">Limpiar búsqueda</button>')+'</div>';
+ $('cards').innerHTML=show.length?show.map(card).join(''):empty;
+ $('pagination').hidden=allResults.length<=pageSize;$('page-info').textContent=state.page+' / '+pages;
+ $('prev-page').disabled=state.page===1;$('next-page').disabled=state.page===pages;updateSaved();
+}
+function changeScope(scope,query=''){
+ state={scope,mode:scope==='family'?'alpha':'search',query,letter:'Todas',page:1,saved:state.saved};
+ $('search').value=query;render();saveHash();
+ if(scope==='term')$('search').focus({preventScroll:true});
+}
+function changeMode(mode){state.mode=mode;state.page=1;state.letter='Todas';state.saved=false;render();saveHash();if(mode==='search')$('search').focus({preventScroll:true})}
+function saveHash(){
+ const p=new URLSearchParams();p.set('vista',state.scope==='term'?'palabras':'afijos');
+ if(state.scope==='family'&&state.mode!=='alpha')p.set('modo',state.mode);
+ if(state.query)p.set('buscar',state.query);
+ if(state.scope==='family'&&state.mode==='alpha'&&state.letter!=='Todas')p.set('letra',state.letter);
+ if(state.saved)p.set('guardadas','1');if(activeKey)p.set('ficha',activeKey);
+ try{history.replaceState(null,'','#'+p.toString())}catch{}
+}
+function readHash(){
+ const p=new URLSearchParams(location.hash.slice(1)),k=p.get('ficha'),q=p.get('buscar')||'';
+ const legacyTerm=!p.has('vista')&&(p.get('tipo')==='term'||k?.startsWith('term:')||(p.get('tipo')!=='family'&&[...terms.values()].some(e=>e.searchName===normalize(q))));
+ state.scope=p.get('vista')==='palabras'||legacyTerm?'term':'family';
+ state.mode=state.scope==='term'?'search':['search','alpha','frequency'].includes(p.get('modo'))?p.get('modo'):'alpha';
+ state.query=q;state.letter=p.get('letra')||'Todas';state.page=1;state.saved=p.get('guardadas')==='1';
+ $('search').value=state.query;render();
+ if(k&&byKey.has(k))openDetail(k,false);else if($('detail').open)$('detail').close();
+}
+
 function familyPart(f){return '<button class="part" data-open="'+esc(key(f))+'"><span class="part-head"><strong>'+esc(f.label)+'</strong>'+icons.arrow+'</span><p>'+esc(f.meaning)+'</p></button>'}
-function renderDetail(k){const e=byKey.get(k);if(!e)return;const fs=e.type==='term'?(e.familyIds||[]).map(id=>families.get(id)).filter(Boolean):[];const notes=[...new Set((e.type==='family'?[e.note]:fs.map(f=>f.note)).filter(Boolean))];const defs=e.type==='term'&&e.definitions?e.definitions:[];let alt=[];for(const d of defs){const v=typeof d==='string'?d:(d.text||d.definition);if(v&&v!==e.definition&&!alt.includes(v))alt.push(v)};let html='<div class="detail-eyebrow">'+categoryIcon(e)+esc(e.type==='family'?'Raíz / afijo · '+(e.category||'Familia de palabras'):'Término médico')+'</div><h2 id="detail-title" class="detail-title">'+esc(e.label)+'</h2><p class="detail-definition">'+esc(e.type==='family'?e.meaning:e.definition)+'</p>';
-if(e.type==='family'){if(e.mnemonic)html+='<div class="remember"><strong>Una imagen para recordarlo</strong>'+esc(e.mnemonic)+'</div>';html+='<div class="detail-section"><h3>Palabras de esta familia</h3><ul class="examples">'+(e.exampleIds||[]).map(id=>terms.get(id)).filter(Boolean).map(t=>'<li><button data-open="'+esc(key(t))+'"><strong>'+esc(t.label)+'</strong><span>'+esc(t.definition)+'</span></button></li>').join('')+'</ul></div>'}else if(fs.length){html+='<div class="detail-section"><h3>Sus piezas en el diccionario</h3>'+fs.map(familyPart).join('')+'</div>';if(fs[0].mnemonic)html+='<div class="remember"><strong>Para recordar '+esc(fs[0].label)+'</strong>'+esc(fs[0].mnemonic)+'</div>'}
+function renderDetail(k){const e=byKey.get(k);if(!e)return;const fs=e.type==='term'?(e.familyIds||[]).map(id=>families.get(id)).filter(Boolean):[];const notes=[...new Set((e.type==='family'?[e.note]:fs.map(f=>f.note)).filter(Boolean))];const defs=e.type==='term'&&e.definitions?e.definitions:[];let alt=[];for(const d of defs){const v=typeof d==='string'?d:(d.text||d.definition);if(v&&v!==e.definition&&!alt.includes(v))alt.push(v)};let html='<div class="detail-eyebrow">'+categoryIcon(e)+esc(e.type==='family'?'Raíz / afijo · '+(e.category||'Familia de palabras'):'Palabra completa')+'</div><h2 id="detail-title" class="detail-title">'+esc(e.label)+'</h2><p class="detail-definition">'+esc(e.type==='family'?e.meaning:e.definition)+'</p>';
+if(e.type==='family'){if(e.mnemonic)html+='<div class="remember"><strong>Una imagen para recordarlo</strong>'+esc(e.mnemonic)+'</div>';html+='<div class="detail-section"><h3>Ejemplos y qué significa cada uno</h3><ul class="examples">'+(e.exampleIds||[]).map(id=>terms.get(id)).filter(Boolean).map(t=>'<li><button data-open="'+esc(key(t))+'"><strong>'+esc(t.label)+'</strong><span>'+esc(t.definition)+'</span></button></li>').join('')+'</ul></div>'}else if(fs.length){html+='<div class="detail-section"><h3>Sus piezas en el diccionario</h3>'+fs.map(familyPart).join('')+'</div>';if(fs[0].mnemonic)html+='<div class="remember"><strong>Para recordar '+esc(fs[0].label)+'</strong>'+esc(fs[0].mnemonic)+'</div>'}
 if(alt.length)html+='<div class="detail-section"><h3>Otros matices recogidos</h3><ul class="examples">'+alt.map(d=>'<li><span>'+esc(d)+'</span></li>').join('')+'</ul></div>';
 if(notes.length)html+='<div class="nuance"><strong>Matices de '+esc(e.type==='family'?'esta familia':'las familias relacionadas')+'</strong>'+notes.map(esc).join('<br><br>')+'</div>';
 html+='<div class="detail-tools"><button data-save="'+esc(k)+'" aria-pressed="'+saved.has(k)+'">'+icons.bookmark+(saved.has(k)?'Guardada':'Guardar ficha')+'</button><button id="copy-link">'+icons.link+'Copiar enlace</button><span class="frequency-tag">'+bars(e.frequency)+esc(frequencyLabel[e.frequency])+' · orientativo</span></div><p class="source-note">Diccionario médico de bolsillo · '+esc((e.sourcePages||[]).length>1?'Páginas ':'Página ')+esc((e.sourcePages||[]).join(', '))+'. Las piezas enlazadas son las familias recogidas en el libro; no siempre representan la etimología completa.</p>';$('detail-content').innerHTML=html;$('detail').scrollTop=0;}
 function openDetail(k,write=true){if(!byKey.has(k))return;if(!$('detail').open)opener=document.activeElement;activeKey=k;renderDetail(k);if(!$('detail').open)$('detail').showModal();$('close-detail').focus({preventScroll:true});if(write)saveHash();}
-function about(){opener=document.activeElement;activeKey=null;$('detail-content').innerHTML='<div class="detail-eyebrow">Contenido y criterios</div><h2 class="detail-title" id="detail-title">Un pequeño libro,<br>siempre a mano.</h2><div class="about-text"><p>Esta web transforma el <em>Diccionario médico de bolsillo</em> de noviembre de 2026 en fichas de consulta: <strong>'+DATA.families.length+' familias y '+DATA.terms.length+' palabras distintas</strong>. Las 604 apariciones de ejemplos del libro se han reunido sin duplicar las palabras que pertenecen a varias familias.</p><h3>Tres formas de encontrar una palabra</h3><ul><li><strong>Buscar:</strong> por término, raíz o significado. No necesitas escribir las tildes.</li><li><strong>Orden A–Z:</strong> selecciona una letra y recorre las fichas.</li><li><strong>Frecuencia:</strong> empieza por el vocabulario más habitual y avanza hacia el más específico.</li></ul><h3>Cómo se entiende la frecuencia</h3><p>Es una clasificación editorial orientativa para el estudio general. No procede de un corpus, de recuentos de consultas ni de estadísticas clínicas. Se usan tres grupos: muy habitual, habitual y más específico. Dentro de cada grupo se sigue el orden alfabético.</p><h3>Aprender con matices</h3><p>Se conservan las definiciones y advertencias del libro. La etimología ayuda a recordar, pero no sustituye una definición clínica: por ejemplo, anemia no significa ausencia de sangre. Las imágenes de recuerdo son asociaciones mnemotécnicas.</p><h3>Tus fichas guardadas</h3><p>Se guardan únicamente en este navegador. No se sincronizan con otros dispositivos. No necesitas iniciar sesión y las búsquedas se resuelven en tu dispositivo.</p><p>Edición de estudio preparada para Carlota🥰.</p></div>';if(!$('detail').open)$('detail').showModal();$('close-detail').focus();saveHash();}
-$('alphabet').innerHTML=['Todas',...'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'].map(l=>'<button class="letter" data-letter="'+l+'" aria-pressed="'+(l==='Todas')+'"'+(l!=='Todas'&&!items.some(e=>letterMatch(e,l))?' disabled':'')+'>'+l+'</button>').join('');
+function about(){opener=document.activeElement;activeKey=null;$('detail-content').innerHTML='<div class="detail-eyebrow">Contenido y criterios</div><h2 class="detail-title" id="detail-title">Un pequeño libro,<br>siempre a mano.</h2><div class="about-text"><p>Esta web transforma el <em>Diccionario médico de bolsillo</em> de noviembre de 2026 en fichas de consulta: <strong>'+DATA.families.length+' familias y '+DATA.terms.length+' palabras distintas</strong>. Las 604 apariciones de ejemplos del libro se han reunido sin duplicar las palabras que pertenecen a varias familias.</p><h3>Dos apartados para consultar</h3><ul><li><strong>Prefijos, sufijos y raíces:</strong> el diccionario principal contiene 103 fichas de elementos médicos, con su significado y todos sus ejemplos. Puedes buscarlos, recorrerlos de la A a la Z u ordenarlos por frecuencia orientativa.</li><li><strong>Buscar una palabra:</strong> escribe un término completo, como anemia o acidófilo. Abre su definición y, desde ella, sus componentes relacionados.</li></ul><p>No necesitas escribir tildes. Pulsa Intro para abrir una coincidencia exacta o el único resultado.</p><h3>Cómo se entiende la frecuencia</h3><p>Es una clasificación editorial orientativa para el estudio general. No procede de un corpus, de recuentos de consultas ni de estadísticas clínicas. Se usan tres grupos: muy habitual, habitual y más específico. Dentro de cada grupo se sigue el orden alfabético.</p><h3>Aprender con matices</h3><p>Se conservan las definiciones y advertencias del libro. La etimología ayuda a recordar, pero no sustituye una definición clínica: por ejemplo, anemia no significa ausencia de sangre. Las imágenes de recuerdo son asociaciones mnemotécnicas.</p><h3>Tus fichas guardadas</h3><p>Se guardan únicamente en este navegador. No se sincronizan con otros dispositivos. No necesitas iniciar sesión y las búsquedas se resuelven en tu dispositivo.</p><p>Edición de estudio preparada para Carlota🥰.</p></div>';if(!$('detail').open)$('detail').showModal();$('close-detail').focus();saveHash();}
+$('alphabet').innerHTML=['Todas',...'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'].map(l=>'<button class="letter" data-letter="'+l+'" aria-pressed="'+(l==='Todas')+'"'+(l!=='Todas'&&!DATA.families.some(e=>letterMatch(e,l))?' disabled':'')+'>'+l+'</button>').join('');
 $('term-total').textContent=DATA.terms.length;$('family-total').textContent=DATA.families.length;
-document.addEventListener('click',event=>{const b=event.target.closest('button');if(!b)return;if(b.dataset.open)openDetail(b.dataset.open);else if(b.dataset.save)toggleSaved(b.dataset.save);else if(b.dataset.mode)changeMode(b.dataset.mode);else if(b.dataset.type){state.type=b.dataset.type;state.page=1;render();saveHash()}else if(b.dataset.letter){state.letter=b.dataset.letter;state.page=1;render();saveHash()}else if(b.dataset.search){state.query=b.dataset.search;$('search').value=state.query;state.type='all';state.page=1;state.saved=false;render();saveHash();$('search').focus()}else if(b.id==='reset-filters'){state={mode:'search',query:'',type:'all',letter:'Todas',page:1,saved:false};$('search').value='';render();saveHash()}else if(b.id==='copy-link'){const url=location.href;if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(url).then(()=>toast('Enlace de la ficha copiado')).catch(()=>toast('Puedes copiar la dirección de esta ficha desde tu navegador'));else toast('Puedes copiar la dirección de esta ficha desde tu navegador')}});
-$('search').addEventListener('input',()=>{state.query=$('search').value;state.page=1;render();saveHash()});$('clear-search').addEventListener('click',()=>{state.query='';$('search').value='';state.page=1;render();saveHash();$('search').focus()});
+document.addEventListener('click',event=>{
+ const b=event.target.closest('button');if(!b)return;
+ if(b.dataset.open)openDetail(b.dataset.open);
+ else if(b.dataset.save)toggleSaved(b.dataset.save);
+ else if(b.dataset.scope)changeScope(b.dataset.scope);
+ else if(b.dataset.mode)changeMode(b.dataset.mode);
+ else if(b.dataset.letter){state.letter=b.dataset.letter;state.page=1;render();saveHash()}
+ else if(b.dataset.search){state.query=b.dataset.search;$('search').value=state.query;state.letter='Todas';state.page=1;state.saved=false;render();saveHash();$('search').focus({preventScroll:true})}
+ else if(b.id==='search-as-word'){state.saved=false;changeScope('term',state.query)}
+ else if(b.id==='reset-filters'){state.query='';state.letter='Todas';state.page=1;state.saved=false;$('search').value='';render();saveHash();$('search').focus({preventScroll:true})}
+ else if(b.id==='copy-link'){const url=location.href;if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(url).then(()=>toast('Enlace de la ficha copiado')).catch(()=>toast('Puedes copiar la dirección de esta ficha desde tu navegador'));else toast('Puedes copiar la dirección de esta ficha desde tu navegador')}
+});
+$('search').addEventListener('input',()=>{state.query=$('search').value;state.page=1;render();saveHash()});
+$('search').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();const q=normalize(state.query);const exact=allResults.find(t=>t.searchName===q||t.label.split('/').some(a=>normalize(a)===q));if(exact)openDetail(key(exact));else if(allResults.length===1)openDetail(key(allResults[0]));}});
+$('clear-search').addEventListener('click',()=>{state.query='';$('search').value='';state.page=1;render();saveHash();$('search').focus()});
 for(const [id,delta] of [['prev-page',-1],['next-page',1]])$(id).addEventListener('click',()=>{state.page+=delta;render();$('results-title').scrollIntoView({behavior:'smooth',block:'start'})});
-$('saved-toggle').addEventListener('click',()=>{state.saved=!state.saved;state.page=1;state.query='';state.type='all';state.letter='Todas';$('search').value='';render();saveHash();$('explorer').scrollIntoView({behavior:'smooth',block:'start'})});
-$('jump-search').addEventListener('click',()=>{changeMode('search');$('search').scrollIntoView({behavior:'smooth',block:'center'});$('search').focus({preventScroll:true})});
-$('random-term').addEventListener('click',()=>{const options=DATA.terms.filter(t=>'term:'+t.id!==activeKey);openDetail('term:'+options[Math.floor(Math.random()*options.length)].id)});
-$('example-term').addEventListener('click',()=>{const t=DATA.terms.find(e=>normalize(e.label)==='citolisis');if(t)openDetail('term:'+t.id)});
+$('saved-toggle').addEventListener('click',()=>{state.saved=!state.saved;state.page=1;state.query='';state.letter='Todas';$('search').value='';render();saveHash();$('explorer').scrollIntoView({behavior:'smooth',block:'start'})});
+$('jump-search').addEventListener('click',()=>{state.saved=false;changeScope('family');$('explorer').scrollIntoView({behavior:'smooth',block:'start'});$('scope-family').focus({preventScroll:true})});
+$('random-term').addEventListener('click',()=>{const source=state.scope==='family'?DATA.families:DATA.terms;const options=source.filter(t=>state.scope+':'+t.id!==activeKey);openDetail(state.scope+':'+options[Math.floor(Math.random()*options.length)].id)});
+$('example-term').addEventListener('click',()=>{const f=DATA.families.find(e=>e.id==='f-filo-filia');if(f)openDetail('family:'+f.id)});
 $('close-detail').addEventListener('click',()=>$('detail').close());$('detail').addEventListener('close',()=>{activeKey=null;saveHash();if(opener?.isConnected)opener.focus({preventScroll:true})});$('detail').addEventListener('click',e=>{if(e.target===$('detail')){const r=$('detail').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('detail').close()}});
 $('help').addEventListener('click',about);$('about-bottom').addEventListener('click',about);
 document.querySelector('.tabs').addEventListener('keydown',e=>{const tabs=[...document.querySelectorAll('[data-mode]')];if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();let i=tabs.indexOf(document.activeElement);i=e.key==='Home'?0:e.key==='End'?2:(i+(e.key==='ArrowRight'?1:2))%3;changeMode(tabs[i].dataset.mode);tabs[i].focus()}});
+document.querySelector('.scope-tabs').addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const scope=e.key==='Home'?'family':e.key==='End'?'term':state.scope==='family'?'term':'family';changeScope(scope);$('scope-'+scope).focus({preventScroll:true})}});
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)&&!$('detail').open){e.preventDefault();$('search').focus();$('search').scrollIntoView({block:'center',behavior:'smooth'})}});
 const motionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');
 let motionOverride=null;try{const preference=localStorage.getItem('carlota-motion-v1');if(preference==='paused'||preference==='playing')motionOverride=preference}catch{}

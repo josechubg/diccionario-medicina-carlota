@@ -8,11 +8,11 @@ Diccionario de estudio en español, como web estática independiente. No necesit
 
 - 103 familias de raíces, prefijos y sufijos.
 - 509 palabras únicas: 604 apariciones de ejemplos del diccionario fuente, reunidas sin perder pertenencias ni variantes de definición.
-- 612 fichas con enlaces entre palabras y familias.
-- Búsqueda por nombre, raíz o significado, sin exigir tildes.
-- Índice por letras, filtro de tipo y paginación.
-- Orden por frecuencia editorial orientativa en tres niveles; no es un recuento estadístico.
-- Fichas guardadas en el navegador, enlaces directos y botón «Sorpréndeme» para descubrir palabras al azar.
+- Dos apartados: el diccionario principal contiene exclusivamente las 103 familias; «Buscar una palabra» consulta los 509 términos completos.
+- Cada raíz o afijo muestra su significado y todos sus ejemplos explicados. Cada palabra enlaza con sus familias relacionadas.
+- Búsqueda por raíz o significado en el primer apartado y por palabra o definición en el segundo, sin exigir tildes. Intro abre una coincidencia exacta o el único resultado.
+- Índice por letras, paginación y orden por frecuencia para las raíces y afijos. La frecuencia es editorial y orientativa, en tres niveles; no es un recuento estadístico.
+- Fichas guardadas en el navegador y filtradas por apartado, enlaces directos compatibles con los anteriores y botón «Sorpréndeme» para descubrir una ficha del apartado actual.
 
 ## Uso
 
@@ -34,6 +34,6 @@ El repositorio público `josechubg/diccionario-medicina-carlota` publica automá
 
 ## Verificación realizada
 
-Se han validado los 604 enlaces de ejemplos y sus relaciones inversas, los 612 identificadores de ficha y las 46 palabras con variantes de definición. Se ha probado la búsqueda, apertura y navegación entre fichas, filtro alfabético, orden por frecuencia, estado sin resultados y persistencia de guardadas. Se revisó la composición en escritorio y en un marco de 390 px.
+Se han validado los 604 enlaces de ejemplos y sus relaciones inversas, los 612 identificadores de ficha y las 46 palabras con variantes de definición. Se ha probado la separación de los dos apartados, la búsqueda de «-filo» y sus seis ejemplos, la consulta de «anemia» con Intro y sus enlaces a «a- / an-» y «-emia», la recarga de enlaces directos, la búsqueda «acidofilos» y el paso del diccionario al buscador de palabras. El índice y la frecuencia muestran exclusivamente raíces y afijos. Se revisó la composición en escritorio y en un marco de 390 px.
 
 La clasificación de frecuencia es orientativa. Las definiciones proceden del material original; esta conversión no constituye una nueva auditoría clínica integral.
